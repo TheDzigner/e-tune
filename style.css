@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
+
+*, 
+::before, 
+::after
+{
+  margin :0;
+  padding :0;
+  box-sizing :border-box ;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+body 
+{
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+    background-color: #252525;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header 
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #333333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 
+{
+    padding: 10px;
+    font-size: 2em;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+header nav 
+{
+    width: 370px;
+}
+
+header nav ul 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+header nav ul li 
+{
+    padding: 10px;
+    margin: 0 10px ;
+}
+
+header nav ul li button 
+{
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #252525;
+    cursor: pointer;
+    background-color: #252525;
+    color: rgba(183,185,190,.4);
+    text-transform: capitalize;
+    transition: background-color .2s ease-in-out;
+}
+
+header nav ul li button.active 
+{
+    background-color: #ffffff;
+    color: #252525;
+    transition: background-color .2s ease-in-out;
+}
+
+
+
+
+.audios
+{
+    margin: 10% auto 0;
+    width: 100%;
+    /* display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; */
+}
+
+.audios iframe
+{
+    width: 380px;
+    height: 400px;
+    margin-left: 35px;
+    display: inline-block;
+}
+
+.playlists 
+{
+    margin: 10% auto 0;
+    width: 100%;
+    display: none;
+}
+
+.playlists iframe 
+{
+    width: 380px;
+    height: 500px;
+    margin-left: 35px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.album 
+{
+    margin: 10% auto 0;
+    width: 100%;
+    display: none;
+}
+
+.album iframe
+{
+    width: 380px;
+    height: 500px;
+    margin-left: 35px;
+    margin-top: 10px;
+    display: inline-block;
+}
